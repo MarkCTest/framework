@@ -1,12 +1,12 @@
 Framework
 =========
 
-This set of files serves as examples of Ruby - Selenium automation framework elements and structure.
+This set of files serves as examples of Ruby-Selenium automation framework elements and structure.
 It's incomplete as the examples are just that, worked examples to provide insight into how we structure and use the tech to build a framework.
 
 <b>Notes</b>
 <ul>
-<li>You will need to install the Gems listed in each of the <b>fw?_controler.rb</b> files</li>
+<li>You will need to install the Gems listed in each of the <b>fw?_controller.rb</b> files</li>
 <li>Each Framework example draws in more components. See the <b>fe?_environment.txt</b> file for what's needed.</li>
 </ul>
 
