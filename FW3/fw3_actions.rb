@@ -16,7 +16,7 @@ def get_page_url
 end # get_page_url
 
 
-# Check the web apge title is as expected
+# Check the web pagee title is as expected
 def validate_page_title
   if @driver.title != @expectedResult then
         failedTest                    #fw3_global_methods
