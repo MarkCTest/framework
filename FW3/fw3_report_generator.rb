@@ -1,4 +1,10 @@
-require 'win32ole'
+# Example Ruby-Selenium framework - v3.0
+
+# This file is the REPORT GENERATOR
+# It creates the Excel based test report, with test data and chart
+#----------------------------------------------------------------
+
+# require 'win32ole'  :Uncomment this line if testing on its own, it's pulled from fw3_controller
 
 # Open Excel and set-up the Worksheets
 excel = WIN32OLE.new('Excel.Application');
@@ -28,7 +34,7 @@ chart.SeriesCollection(1).Name = "No. of Test Cases";
 
 # TO DO Add     =CONCATENATE("Total Test Cases = ", <sum>)
 
-workbook.SaveAs('C:\Dev\aptana\framework\FW3\TestResults.xls');
+workbook.SaveAs('C:\Dev\aptana\framework\FW3\TestResults.xls'); # Change this location as needed
 workbook.saved = true;
 
 #excel.ActiveWorkbook.Close(0);
