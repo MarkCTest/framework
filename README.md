@@ -18,4 +18,5 @@ This is the basicFWExample.rb split out into a more logical file set. Not comple
 The 5 files demonstrate that Ruby can reach out to a framework that we can now expand on.
 
 <b>FW3</b><br/>
-In progress...
+Extends FW2 with Logging and instruments Excel reports but not yet implemented. Teardown and Setup extended, new methods added for dataAndTime,
+logGeneration and failedTest screen-shot capture.
