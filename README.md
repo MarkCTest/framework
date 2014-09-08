@@ -1,7 +1,7 @@
 Framework
 =========
 
-This set of files serves as examples of Ruby-Selenium automation framework elements and structure.
+This set of files serves as examples of <b>Ruby-Selenium</b> automation framework elements and structure.
 It's incomplete as the examples are just that, worked examples to provide insight into how we structure and use the tech to build a framework.
 
 <b>Notes</b>
