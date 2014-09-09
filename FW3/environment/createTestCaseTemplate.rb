@@ -13,16 +13,16 @@ workbook = excel.Workbooks.Add();
 worksheet = workbook.Worksheets(1);
 worksheet.Name = "Test Case";
 
-# Add data to the cells of the table (maybe split this out later)
+# Add data to the cells of the table
 
 worksheet.Range("B2").value = "Test Case Template"
 worksheet.Range("B4").value = "Test Case Name"
 
 worksheet.Range("B6:E6").value = ["Target","Object ID","Action","Expected Result"];
-worksheet.Range("B7:E7").value = ["?", "?"];
+worksheet.Range("B7:E7").value = ["?", "?", "?", "?"];
 
 # Save the Template
-workbook.SaveAs('C:\Dev\aptana\framework\FW3\environment\TesCaseTemplate.xlsx'); # Change this location as needed
+workbook.SaveAs('C:\Dev\aptana\framework\FW3\environment\TestCaseTemplate.xlsx'); # Change this location as needed
 workbook.saved = true;
 
 #excel.ActiveWorkbook.Close(0);
