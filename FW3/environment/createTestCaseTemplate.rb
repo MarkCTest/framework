@@ -15,8 +15,11 @@ worksheet.Name = "Test Case";
 
 # Add data to the cells of the table
 
-worksheet.Range("B2").value = "Test Case Template"
-worksheet.Range("B4").value = "Test Case Name"
+worksheet.Range("B2").value = "Test Case Template";
+worksheet.Range("B2").Font.Bold = TRUE;
+worksheet.Range("B2").Font.Size = 24;
+
+worksheet.Range("B4").value = "Test Case Name";
 
 worksheet.Range("B6:E6").value = ["Target","Object ID","Action","Expected Result"];
 worksheet.Range("B7:E7").value = ["?", "?", "?", "?"];
