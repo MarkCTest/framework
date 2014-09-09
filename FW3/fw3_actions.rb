@@ -1,6 +1,6 @@
 # Example Ruby-Selenium framework - v3.0
 
-# These are all the test actions we have in our library
+# These are all the test actions we have in our example library
 # Once there are a large number, we'd split them out into logical sets
 # --------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ def get_page_url
 end # get_page_url
 
 
-# Check the web pagee title is as expected
+# Check the web page title is as expected
 def validate_page_title
   if @driver.title != @expectedResult then
         failedTest                    #fw3_global_methods
@@ -29,3 +29,13 @@ def validate_page_title
         @testLog.puts("#{@originalTestCaseTitle} \n #{pass_message}")
   end
 end
+
+
+# Work through a list of links and check they are on the page
+def validate_page_link_set
+ # do each |link|
+  # link.text
+  # link.location
+end
+
+

@@ -34,7 +34,7 @@ chart.SeriesCollection(1).Name = "No. of Test Cases";
 
 # TO DO Add     =CONCATENATE("Total Test Cases = ", <sum>)
 
-workbook.SaveAs('C:\Dev\aptana\framework\FW3\TestResults.xls'); # Change this location as needed
+workbook.SaveAs('C:\Dev\aptana\framework\FW3\TestResults.xlsx'); # Change this location as needed
 workbook.saved = true;
 
 #excel.ActiveWorkbook.Close(0);

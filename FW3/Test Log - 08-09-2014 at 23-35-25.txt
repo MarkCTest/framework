@@ -1,9 +1,0 @@
-                   Test Log: 08-09-2014 at 23-35-25
-..................................................................
-
-(TC-001) Checking the browser title 
- [PASS] Title was as expected
-
-................
-
-Test Run Ended on 08-09-2014 at 23-35-33

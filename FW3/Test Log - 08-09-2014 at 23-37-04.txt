@@ -1,9 +1,0 @@
-                   Test Log: 08-09-2014 at 23-37-04
-..................................................................
-
-(TC-001) Checking the browser title 
- [FAIL] Title was Google, but we expected GoogleFAIL
-
-................
-
-Test Run Ended on 08-09-2014 at 23-37-10
