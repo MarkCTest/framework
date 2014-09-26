@@ -48,6 +48,22 @@ def testScript001
   setup
     get_page_url
     validate_title
+    
+    element = @driver.find_element :name => "q"
+    element.send_keys "Cheese!"
+    element.submit
+    
+    b = @driver.title
+    puts b
+    
+    if @driver.title != "Cheese!" then
+      puts "Title was not as expected"
+    else
+      puts "Title OK"
+    end
+    
+    a = gets
+    
   teardown
 end
 
