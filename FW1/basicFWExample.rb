@@ -1,4 +1,4 @@
-# This script gives us a simple exmaple of how to use just Selenium Webdriver
+# This script gives us a simple example of how to use just Selenium Webdriver
 # using Ruby and nothing else (no RSpec, Error trapping, Yield, etc. that we might add later)
 # but it DOES capture a screen shot on failure
 # We also see how we'd break-down items to build a more maintainable framework
@@ -11,7 +11,7 @@ require 'selenium-webdriver'
 
 @originalTestCaseTitle = "(TC-001) Checking the browser title"
 @testUrl = 'http://www.google.com'
-@expectedResult = 'Google'
+@expectedResult = 'Googleaaaa'
 @webDrivertoUse = :firefox
 
 #-------- This lot would be in a Function / Method LIBRARY  -----------
@@ -34,7 +34,7 @@ end
 
 def validate_title
   if @driver.title != @expectedResult then
-       @driver.save_screenshot "./#{Time.now.strftime("failshot__%d_%m_%Y__%H_%M_%S")}.png"
+       @driver.save_screenshot "./#{Time.now.strftime("failshot_%d-%m-%Y_at_%H-%M-%S")}.png"
        puts "Error - Title was #{@driver.title}, but we expected #{@expectedResult}"
    else 
      puts "Test Passed"
@@ -48,22 +48,6 @@ def testScript001
   setup
     get_page_url
     validate_title
-    
-    element = @driver.find_element :name => "q"
-    element.send_keys "Cheese!"
-    element.submit
-    
-    b = @driver.title
-    puts b
-    
-    if @driver.title != "Cheese!" then
-      puts "Title was not as expected"
-    else
-      puts "Title OK"
-    end
-    
-    a = gets
-    
   teardown
 end
 
