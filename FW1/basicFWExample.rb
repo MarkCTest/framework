@@ -11,7 +11,7 @@ require 'selenium-webdriver'
 
 @originalTestCaseTitle = "(TC-001) Checking the browser title"
 @testUrl = 'http://www.google.com'
-@expectedResult = 'Googleaaaa'
+@expectedResult = 'Google'
 @webDrivertoUse = :firefox
 
 #-------- This lot would be in a Function / Method LIBRARY  -----------
