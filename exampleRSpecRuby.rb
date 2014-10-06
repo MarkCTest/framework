@@ -89,7 +89,7 @@ end #S-005
 
 #browser.quit
 
-# rspec -fh zhimin.rb > zhimin001.html --example "E-004a"
-# rspec zhimin.rb -f documentation --tag test 
+# rspec -fh exampleRSpecRuby.rb > exampleRSpecRuby.html --example "E-004a"
+# rspec exampleRSpecRuby.rb -f documentation --tag test 
 
 
