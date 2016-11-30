@@ -17,7 +17,5 @@ require_relative 'fw3_properties'
 require_relative 'fw3_testCase_001'
 
 # Call Test Scripts
-
 log_generation  # If we wanted this to be on/off, it could be moved to fw3_global_methods > setup
-
 testCase_001
